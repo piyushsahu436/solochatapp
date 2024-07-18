@@ -5,7 +5,7 @@ import 'package:solocaht/login_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(
+  runApp(g
     MaterialApp(
       home: LoginPage(
         onTap: () {
