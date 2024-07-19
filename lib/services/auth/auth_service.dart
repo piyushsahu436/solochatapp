@@ -25,7 +25,7 @@ class AuthService {
 
       return userCredential;
     } on FirebaseAuthException catch (e) {
-      throw Exception(e.code);d
+      throw Exception(e.code);
     }
   }
 
