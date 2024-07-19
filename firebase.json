@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"solopackchat","appId":"1:135505814527:android:fd2dbb470dd170d4b5fdca","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"solopackchat","configurations":{"android":"1:135505814527:android:fd2dbb470dd170d4b5fdca","ios":"1:135505814527:ios:c103d98ab54719b2b5fdca"}}}}}}

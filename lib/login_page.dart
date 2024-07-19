@@ -2,11 +2,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:solocaht/services/auth/auth_service.dart';
 import 'components/my_button.dart';
 import 'components/my_textfield.dart';
-
-
 
 class LoginPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
@@ -15,6 +13,27 @@ class LoginPage extends StatelessWidget {
 
   LoginPage({super.key, required this.onTap});
 
+  // login method
+
+  void login(BuildContext context) async {
+    // auth service
+    final authService = AuthService();
+// try login
+    try {
+      await authService.signInWithEmailPassword(
+          _emailController.text, _pwController.text);
+    }
+// catch any error occur
+
+    catch (e) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(e.toString()),
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +83,7 @@ class LoginPage extends StatelessWidget {
             // login button code
             MyButton(
               text: 'Login',
-              onTap: () => {},
+              onTap: () => login(context),
             ),
 
             SizedBox(
@@ -82,7 +101,7 @@ class LoginPage extends StatelessWidget {
                 GestureDetector(
                   onTap: onTap,
                   child: Text(
-                    "Register now",
+                    " Register now",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.primary),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135505814527",
+    "project_id": "solopackchat",
+    "storage_bucket": "solopackchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135505814527:android:fd2dbb470dd170d4b5fdca",
+        "android_client_info": {
+          "package_name": "com.example.solocaht"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqpLKviT8L5GsFIe07SnthOPELZv9Ql7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
